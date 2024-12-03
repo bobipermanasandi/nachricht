@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Nachricht</string>
+
+    <string name="search_hint">Search News</string>
+    <string name="empty_data">Data not found</string>
+
+    <string name="add_bookmark">Add to Bookmark</string>
+    <string name="delete_bookmark">Remove from Bookmark</string>
+    <string name="back">Back</string>
+
+    <string name="home">Home</string>
+    <string name="detail">Detail</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="profile">Profile</string>
+    <string name="about_page">about_page</string>
+    <string name="icon_search">icon_search</string>
+
+    <string name="email">bobipermana17@gmail.com</string>
+    <string name="name">Bobi Permana Sandi</string>
+</resources>
