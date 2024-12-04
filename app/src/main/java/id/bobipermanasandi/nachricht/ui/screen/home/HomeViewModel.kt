@@ -1,9 +1,7 @@
 package id.bobipermanasandi.nachricht.ui.screen.home
 
-import android.widget.Toast
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
-import androidx.compose.ui.platform.LocalContext
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import id.bobipermanasandi.nachricht.data.NewsRepository
@@ -22,7 +20,7 @@ class HomeViewModel(private val repository: NewsRepository) : ViewModel() {
     private val _query = mutableStateOf("")
     val query: State<String> get() = _query
 
-    private val _message = mutableStateOf<String?>(null)
+    private val _message = mutableStateOf("")
     val message: State<String?> = _message
 
     fun searchNews(q: String) = viewModelScope.launch {
@@ -41,6 +39,11 @@ class HomeViewModel(private val repository: NewsRepository) : ViewModel() {
         repository.updateNews(id, newState)
             .collect { isUpdated ->
                 if (isUpdated) searchNews(_query.value)
+                if (newState) {
+                    _message.value = "Add to Bookmark"
+                } else {
+                    _message.value = "Remove from Bookmark"
+                }
             }
     }
 }

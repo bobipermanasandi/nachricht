@@ -37,6 +37,7 @@ fun NewsItem(
     title: String,
     author: String,
     urlToImage: String,
+    publishedAt: String,
     isBookmark: Boolean,
     onBookmarkClicked: (id: Int, newState: Boolean) -> Unit,
     modifier: Modifier = Modifier
@@ -88,7 +89,11 @@ fun NewsItem(
 
                 )
                 Spacer(modifier = Modifier.height(4.dp))
-
+                Text(
+                    text = publishedAt,
+                    fontSize = 10.sp,
+                    fontWeight = FontWeight.W200,
+                )
             }
         }
         Icon(
@@ -117,6 +122,7 @@ fun NewsItemPreview() {
             id = 0,
             title = "Women’s tennis pro Świątek suspended for banned substance",
             author = "Kyunzi Permana",
+            publishedAt = "2024-11-28T23:15:28+00:00",
             urlToImage = "https://cdnph.upi.com/ph/st/th/3551732834721/2024/upi/7a257913607535d13fbca7ce7beb2886/v1.5/Womens-tennis-pro-witek-suspended-for-banned-substance.jpg",
             isBookmark = false,
             onBookmarkClicked = { _, _ -> }

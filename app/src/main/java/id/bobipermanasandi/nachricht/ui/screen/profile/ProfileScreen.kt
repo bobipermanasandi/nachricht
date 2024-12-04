@@ -37,7 +37,6 @@ fun ProfileScreen() {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color.White)
     ) {
         Column(
             modifier = Modifier

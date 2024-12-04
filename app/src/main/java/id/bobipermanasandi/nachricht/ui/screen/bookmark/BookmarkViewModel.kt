@@ -1,5 +1,7 @@
 package id.bobipermanasandi.nachricht.ui.screen.bookmark
 
+import androidx.compose.runtime.State
+import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import id.bobipermanasandi.nachricht.data.NewsRepository
@@ -15,6 +17,9 @@ class BookmarkViewModel(private val repository: NewsRepository) : ViewModel() {
     val uiState: StateFlow<UiState<List<News>>>
         get() = _uiState
 
+    private val _message = mutableStateOf("")
+    val message: State<String?> = _message
+
     fun getBookmarkNews() = viewModelScope.launch {
         repository.getBookmarkNews()
             .catch {
@@ -27,6 +32,11 @@ class BookmarkViewModel(private val repository: NewsRepository) : ViewModel() {
 
     fun updateNews(id: Int, newState: Boolean) {
         repository.updateNews(id, newState)
+        if (newState) {
+            _message.value = "Add to Bookmark"
+        } else {
+            _message.value = "Remove from Bookmark"
+        }
 
         getBookmarkNews()
     }

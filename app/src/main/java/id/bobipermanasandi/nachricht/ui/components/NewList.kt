@@ -31,6 +31,7 @@ fun NewsList(
                 id = item.id,
                 title = item.title,
                 author = item.author,
+                publishedAt = item.publishedAt,
                 urlToImage = item.urlToImage,
                 isBookmark = item.isBookmark,
                 onBookmarkClicked = onBookmarkClicked,

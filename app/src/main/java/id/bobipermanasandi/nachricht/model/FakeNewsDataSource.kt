@@ -15,7 +15,7 @@ object FakeNewsDataSource {
         News(
             id = 2,
             title = "ESPN tennis analyst John McEnroe will miss some of US Open after positive Covid-19 test",
-            author = "Kyunzi Permana",
+            author = "Wayne Sterling",
             source = "CNN Tennis",
             publishedAt = "2024-11-28T23:30:30+00:00",
             url = "https://www.cnn.com/2023/08/29/tennis/john-mcenroe-covid19-us-open-spt-intl/index.html",
@@ -25,7 +25,7 @@ object FakeNewsDataSource {
         News(
             id = 3,
             title = "Aryna Sabalenka exacerbated handshake snub by waiting at the net, says Elina Svitolina",
-            author = "Michele Antoni",
+            author = "George Ramsay",
             source = "CNN Tennis",
             publishedAt = "2024-11-28T23:30:30+00:00",
             url = "https://www.cnn.com/2023/06/06/tennis/aryna-sabalenka-elina-svitolina-french-open-spt-intl/index.html",
@@ -35,7 +35,7 @@ object FakeNewsDataSource {
         News(
             id = 4,
             title = "Women’s tennis pro Świątek suspended for banned substance",
-            author = "Kurt Young",
+            author = "Mike Heuer",
             source = "upiasia",
             publishedAt = "2024-11-28T23:26:45+00:00",
             url = "https://www.upi.com/Top_News/World-News/2024/11/28/uk-swiatek-suspension-banned-substance/3551732834721/",
@@ -45,7 +45,7 @@ object FakeNewsDataSource {
         News(
             id = 5,
             title = "Australian Open Fast Facts",
-            author = "Marc Little",
+            author = "CNN Editorial Research",
             source = "CNN Asia",
             publishedAt = "2024-11-28T23:15:28+00:00",
             url = "https://www.cnn.com/2013/10/30/world/australian-open-fast-facts/index.html",
@@ -54,53 +54,53 @@ object FakeNewsDataSource {
         ),
         News(
             id = 6,
-            title = "",
-            author = "",
-            source = "",
-            publishedAt = "",
-            url = "",
-            urlToImage = "",
-            description = ""
+            title = "The American men aiming to upset the odds at this year's US Open",
+            author = "Ben Church",
+            source = "CNN Tennis",
+            publishedAt = "2024-11-28T23:30:30+00:00",
+            url = "https://www.cnn.com/2023/09/05/tennis/us-open-mens-quarterfinal-trio-spt-intl/index.html",
+            urlToImage = "https://cdn.cnn.com/cnnnext/dam/assets/230904123444-taylor-fritz-frances-tiafoe-and-ben-shelton-split-super-169.jpg",
+            description = "For quite some time, American men have been threatening to break through tennis' elite and, at this year's US Open, it appears that time has finally come."
         ),
         News(
             id = 7,
-            title = "",
-            author = "",
-            source = "",
-            publishedAt = "",
-            url = "",
-            urlToImage = "",
-            description = ""
+            title = "Nick Kyrgios to miss French Open with injury sustained during robbery, agent says",
+            author = "George Ramsay and Zayn Nabbi",
+            source = "CNN Tennis",
+            publishedAt = "2024-11-28T23:30:30+00:00",
+            url = "https://www.cnn.com/2023/05/18/tennis/nick-kyrgios-french-open-injury-robbery-spt-intl/index.html",
+            urlToImage = "https://cdn.cnn.com/cnnnext/dam/assets/230518040343-01-nick-kyrgios-aus-open-011323-file-super-169.jpg",
+            description = "Australian tennis star Nick Kyrgios is set to miss the French Open after injuring his foot during an incident where his car was stolen, his agent confirmed to CNN Sport on Thursday."
         ),
         News(
             id = 8,
-            title = "",
-            author = "",
-            source = "",
-            publishedAt = "",
-            url = "",
-            urlToImage = "",
-            description = ""
+            title = "Novak Djokovic stands by Kosovo comments at the French Open",
+            author = "George Ramsay",
+            source = "CNN Tennis",
+            publishedAt = "2024-11-28T23:30:30+00:00",
+            url = "https://www.cnn.com/2023/06/01/tennis/novak-djokovic-french-open-kosovo-serbia-spt-intl/index.html",
+            urlToImage = "https://cdn.cnn.com/cnnnext/dam/assets/230601051122-01-novak-djokovic-053123-restricted-super-169.jpg",
+            description = "Serbian tennis star Novak Djokovic has stood by his decision to send a political message about Kosovo at the French Open."
         ),
         News(
             id = 9,
-            title = "",
-            author = "",
-            source = "",
-            publishedAt = "",
-            url = "",
-            urlToImage = "",
-            description = ""
+            title = "Fan violence at soccer match in Germany leaves 79 people injured, including 10 police officers",
+            author = "Matias Grez",
+            source = "CNN Football",
+            publishedAt = "2024-11-28T23:30:30+00:00",
+            url = "https://www.cnn.com/2024/12/02/sport/soccer-fan-violence-germany-spt/index.html",
+            urlToImage = "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2157126625.jpg?c=16x9&q=h_653,w_1160,c_fill/f_webp",
+            description = "Fan violence at a soccer match in Germany left 79 people injured on Saturday, local police said. Supporters of FC Carl Zeiss Jena and BSG Chemie Leipzig clashed following the fourth-division match, which Jena won 5-0, in an episode of “disinhibited violence,” police said."
         ),
         News(
             id = 10,
-            title = "",
-            author = "",
-            source = "",
-            publishedAt = "",
-            url = "",
-            urlToImage = "",
-            description = ""
+            title = "Tennis star in tears as she struggles to answer questions about disqualification",
+            author = "Ben Church",
+            source = "CNN Tennis",
+            publishedAt = "2024-11-28T23:30:30+00:00",
+            url = "https://www.cnn.com/2023/06/06/tennis/miyu-kato-disqualified-french-open-tears-spt-intl/index.html",
+            urlToImage = "https://cdn.cnn.com/cnnnext/dam/assets/230606062616-miyu-kato-disqualified-french-open-file-restricted-060423-super-169.jpg",
+            description = "A day after being controversially disqualified from the French Open for inadvertently hitting a ball girl with a ball, an emotional Miyu Kato struggled to answer questions about the incident."
         )
 
     )

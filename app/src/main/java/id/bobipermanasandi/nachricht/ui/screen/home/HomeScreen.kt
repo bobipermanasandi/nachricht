@@ -1,8 +1,10 @@
 package id.bobipermanasandi.nachricht.ui.screen.home
 
+import android.widget.Toast
 import androidx.compose.foundation.layout.Column
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.*
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
@@ -26,6 +28,8 @@ fun HomeScreen(
 
 ) {
     val query by viewModel.query
+    val message by viewModel.message
+    val context = LocalContext.current
 
     viewModel.uiState.collectAsState(initial = UiState.Loading).value.let { uiState ->
         when (uiState) {
@@ -39,6 +43,11 @@ fun HomeScreen(
                     newsList = uiState.data,
                     onBookmarkClicked = { id, newState ->
                         viewModel.updateNews(id, newState)
+                        Toast.makeText(
+                            context,
+                            message,
+                            Toast.LENGTH_LONG
+                        ).show()
                     },
                     navigateToDetail = navigateToDetail
                 )
